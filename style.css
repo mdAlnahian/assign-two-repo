@@ -9,7 +9,7 @@
 .mandatory{
     font-family: 'Roboto', sans-serif;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 /* navigation style */
@@ -218,4 +218,177 @@ first-section-description-and-image
    }
    .icon{
        padding: 5px;
+   }
+
+
+
+   /* ------------------------------------------------
+   media query for making the website responsive  
+   -----------------------------------------------*/
+   @media screen and (max-width: 688px) {
+
+    .nav-bar{
+        padding: 20px 0;
+
+    }
+    .nav-logo h2{
+        font-size: 1.3em;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .nav-links{
+        display: none;
+    }
+    
+    /* -------------------------------
+    first section style for responsive
+    first-section-description-and-image
+----------------------------------*/
+    .first-section{
+        /* padding: 50px 0; */
+        display: flex;
+        flex-direction: column;
+    }
+    .first-section-description{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .first-section-description h1{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .first-section-description a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 18px;
+        background-color: rgb(161, 29, 95);
+        border-radius: 20px;
+    }
+    .first-section-image{
+        width: 100%;
+        padding-left: 0px;
+        margin-top: 40px;
+    }
+    .first-section-image img{
+        width: 85%;
+        margin: 0 auto;
+        padding: 0 30px;
+        
+    }
+    .second-section{
+        /* width: 90%;
+        margin: 0 auto; */
+        /* margin: 80px 0; */
+     display: none;
+      
+    }
+    /* .third-section style for making the website responsive */
+    .third-section h2{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .third-section h3 {
+        font-size: 25px;
+    }
+    .third-section h4 {
+      font-size: 20px;
+      font-weight: 300;
+    }
+    .third-section-grid{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        grid-gap: 20px;
+    }
+    .third-section-data{
+        width: 280px;
+        margin: 0 auto;
+        border: 2px solid rgb(212, 206, 206);
+        border-radius: 4px;
+        box-shadow:  0 5px 10px 0 rgba(0,0,0,0.2), 0 7px 12px 0 rgba(0,0,0,0.2);
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        
+    } 
+    .third-section-data .third-section-items img{
+        /* max-width: 100%; */
+        width: 90%;
+        margin: 0 14px;
+        
+     } 
+     .third-section-details{
+        margin-bottom: 0px;
+        margin-left: 14px;
+    }
+    .third-section-items{
+        margin-top: 10px;
+       
+    } 
+    .filled{
+        font-size: 0.5em;
+    }
+    .empty{
+        font-size: 0.5em;
+    }
+
+    /* contact us section responsiveness */
+    .fourth-section h2{
+        font-size: 28px;
+        text-align: center;
+        margin: 30px 0px;
+    }
+    .fourth-section-pro{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .fourth-section-pro .form-sub-one{
+        width: 100%;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+    .fourth-section-pro .form-sub-two{
+        width: 100%;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    .form-sub-one .form-fill{
+        width: 300px;
+        height: 25px;
+        margin: 10px;
+        padding: 0 20px;
+        outline: none;
+        border: none;
+        border-bottom: 3px solid pink;
+        font-size: 18px;
+        background-color: rgba(243, 235, 235, 0.726);
+    }
+    .form-sub-one .form-fill2{
+        width: 300px;
+        margin: 10px;
+        padding: 0 20px;
+        font-size: 12px;
+        outline: none;
+    }
+    .form-sub-one .button
+    {
+        text-decoration: none;
+        color: white;
+        padding: 8px 14px;
+        background-color: rgb(161, 29, 95);
+        margin: 7px;
+    }
+    .form-sub-two h4{
+        font-size: 12px;
+       
+    }
+        .form-sub-two {
+            display: none;
+        }
    }
