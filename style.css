@@ -146,6 +146,18 @@ first-section-description-and-image
       color: rgb(204, 175, 175);
       font-size: 0.8em;
   }
+  .see-more{
+    display: flex;
+    justify-content: end;
+    padding: 0;
+  }
+  .see-more a{
+   
+     font-size: 17px;
+      text-decoration: none;
+      color: rgb(78, 13, 24);
+   
+  }
   /* third section style end */
 
 /*-----------------------------
@@ -225,7 +237,7 @@ first-section-description-and-image
    /* ------------------------------------------------
    media query for making the website responsive  
    -----------------------------------------------*/
-   @media screen and (max-width: 688px) {
+   @media screen and (max-width: 576px) {
 
     .nav-bar{
         padding: 20px 0;
@@ -236,8 +248,11 @@ first-section-description-and-image
         text-align: center;
         margin: 0 auto;
     }
-    .nav-links{
+    .nav-links , .need-for-hide{
         display: none;
+    }
+    .nav-links , .need-for-show{
+        display: inline-block;
     }
     
     /* -------------------------------
@@ -269,7 +284,7 @@ first-section-description-and-image
         padding-left: 0px;
         margin-top: 40px;
     }
-    .first-section-image img{
+    .first-section-image img{ 
         width: 85%;
         margin: 0 auto;
         padding: 0 30px;
@@ -282,7 +297,8 @@ first-section-description-and-image
      display: none;
       
     }
-    /* .third-section style for making the website responsive */
+    /*-------------------------------------------------------- .third-section style for making the website responsive 
+-----------------------------------------------------*/
     .third-section h2{
         text-align: center;
         margin-bottom: 30px;
@@ -337,7 +353,9 @@ first-section-description-and-image
         font-size: 0.5em;
     }
 
-    /* contact us section responsiveness */
+    /* -----------------------------
+    contact us section responsiveness
+    ------------------------------ */
     .fourth-section h2{
         font-size: 28px;
         text-align: center;
@@ -361,7 +379,7 @@ first-section-description-and-image
     .form-sub-one .form-fill{
         width: 300px;
         height: 25px;
-        margin: 10px;
+        margin: 10px auto;
         padding: 0 20px;
         outline: none;
         border: none;
@@ -371,9 +389,9 @@ first-section-description-and-image
     }
     .form-sub-one .form-fill2{
         width: 300px;
-        margin: 10px;
+        margin: 10px auto;
         padding: 0 20px;
-        font-size: 12px;
+        font-size: 18px;
         outline: none;
     }
     .form-sub-one .button
@@ -388,7 +406,7 @@ first-section-description-and-image
         font-size: 12px;
        
     }
-        .form-sub-two {
+      .form-sub-two {
             display: none;
         }
    }
