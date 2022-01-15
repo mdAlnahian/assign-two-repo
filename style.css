@@ -1,4 +1,140 @@
-h2{
-    background-color: rgb(189, 119, 119);
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Condensed&family=Roboto:wght@500&family=Source+Sans+Pro&display=swap');
+
+/* common css */
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    margin: 0 auto;
 }
+
+/* navigation style */
+
+.nav-bar{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo h2{
+    font-size: 1.7em;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    padding: 0 16px;
+    font-size: 1.2em;
+}
+
+/* -------------------------------
+first section style
+first-section-description-and-image
+----------------------------------*/
+.first-section{
+    /* padding: 50px 0; */
+    display: flex;
+    justify-content: space-between;
+}
+.first-section-description{
+    margin-top: 50px;
+    width: 67%;
+}
+.first-section-description h1{
+    font-size: 65px;
+    margin-bottom: 16px;
+}
+.first-section-image{
+    width: 33%;
+    padding-left: 100px;
+}
+/* .main-section-description p{
+    margin-bottom: 20px;
+} */
+.first-section-description a{
+    text-decoration: none;
+    color: white;
+    padding: 14px 24px;
+    background-color: rgb(161, 29, 95);
+    border-radius: 25px;
+}
+
+/*--------------------------------
+ second section style
+ ------------------------------ */
+ .section-width{
+        width: 90%;
+        margin: 0 auto;
+ }
+ .second-section{
+     /* width: 90%;
+     margin: 0 auto; */
+     /* margin: 80px 0; */
+     margin-top: 80px;
+     margin-bottom: 80px;
+     border-top: 2px solid rgb(235, 220, 220) ;
+     border-bottom: 2px solid rgb(235, 220, 220) ;
+   
+ }
+ .second-section-logo{
+     display: flex;
+     justify-content: space-between;
+     margin: 0 30px;
+     padding: 30px 0px;
+ }
+
+ /*--------------------------------
+  third section style
+  ------------------------------- */
+  .third-section h2{
+      text-align: center;
+      margin-bottom: 70px;
+      font-size: 42px;
+  }
+  .third-section h3 {
+      font-size: 32px;
+  }
+  .third-section h4 {
+    font-size: 30px;
+    font-weight: 300;
+}
+  .third-section-grid{
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      justify-content: center;
+      align-items: center;
+      grid-gap: 50px;
+  }
+  .third-section-data{
+      border: 2px solid rgb(212, 206, 206);
+      border-radius: 4px;
+      box-shadow:  ;
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  .third-section-data .third-section-items img{
+    /* max-width: 100%; */
+    width: 100%;
+ } 
+ .third-section-details{
+     margin-bottom: 20px;
+ }
+  .third-section-items{
+      margin-top: 40px;
+     
+  } 
+  .third-section-details p, span{
+      color: rgb(131, 136, 131);
+  }
+  .filled{
+      color: goldenrod;
+      font-size: 0.8em;
+  }
+  .empty{
+     
+      color: rgb(204, 175, 175);
+      font-size: 0.8em;
+  }
