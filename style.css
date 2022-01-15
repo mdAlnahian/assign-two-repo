@@ -232,12 +232,221 @@ first-section-description-and-image
        padding: 5px;
    }
 
+ 
 
+   /* media query for large devices more than 768px under 992px */
+
+   @media  screen and (max-width: 992px) {
+    .nav-bar{
+        padding: 40px 0;
+      
+    }
+    .nav-logo h2{
+        font-size: 1.6em;
+    }
+    .nav-links a{
+        padding: 10px;
+        font-size: .8em;
+    }
+   
+    .first-section{
+        /* padding: 50px 0; */
+        display: flex;
+        flex-direction: column;
+    }
+    .first-section-description{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .second-section{
+        display: none;
+      
+    } 
+    .third-section h2{
+        text-align: center;
+        margin-bottom: 32px;
+        font-size: 30px;
+    }
+    .third-section h3 {
+        font-size: 22px;
+    }
+    .third-section h4 {
+      font-size: 20px;
+    }
+    .third-section-grid{
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+    .fourth-section-pro{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+
+
+   }
+
+/* ----------------------
+media query for tablet
+-------------------------- */
+ @media screen and (max-width: 768px) {
+
+    /* navigation style */
+
+        .nav-bar{
+            padding: 30px 0;
+          
+        }
+        .nav-logo h2{
+            font-size: 1.4em;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: black;
+            padding: 8px;
+            font-size: .8em;
+        }
+          /* -------------------------------
+            first section style for responsive
+            first-section-description-and-image
+        ----------------------------------*/
+        .first-section{
+            /* padding: 50px 0; */
+            display: flex;
+            flex-direction: column;
+        }
+        .first-section-description{
+            margin-top: 30px;
+            width: 100%;
+        }
+        .first-section-description h1{
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+        .first-section-description a{
+            text-decoration: none;
+            color: white;
+            padding: 12px 20px;
+        }
+        .first-section-image{
+            width: 100%;
+            padding-left: 0px;
+            margin-top: 40px;
+        }
+        .first-section-image img{ 
+            width: 85%;
+            margin: 0 auto;
+            padding: 0 30px;
+            
+        }
+
+        /* section-section media query for tablet */
+        .second-section{
+            display: none;
+          
+        } 
+    /*------------------------------------------------------- .third-section style for making the website responsive 
+        -----------------------------------------------------*/
+        .third-section h2{
+            text-align: center;
+            margin-bottom: 28px;
+            font-size: 25px;
+        }
+        .third-section h3 {
+            font-size: 18px;
+        }
+        .third-section h4 {
+          font-size: 15px;
+          font-weight: 300;
+        }
+        .third-section-grid{
+
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 20px;
+        }
+        .third-section-data{
+            width: 250px;
+            margin: 0 auto;
+            
+        }
+        .third-section-data .third-section-items img{
+            /* max-width: 100%; */
+            width: 90%;
+            margin: 0 12px;
+            
+         } 
+         .third-section-details{
+            margin-bottom: 0px;
+            margin-left: 12px;
+        }
+        .third-section-items{
+            margin-top: 12px;
+           
+        } 
+        .filled{
+            font-size: 0.65em;
+        }
+        .empty{
+            font-size: 0.65em;
+        }
+
+   /* -----------------------------
+        contact us section responsiveness
+    ------------------------------ */
+    .fourth-section h2{
+        font-size: 28px;
+        text-align: center;
+        margin: 35px 0px;
+    }
+    .fourth-section-pro{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .fourth-section-pro .form-sub-one{
+        width: 100%;
+        margin: 8px auto;
+        /* margin-bottom: 18px; */
+    }
+    .fourth-section-pro .form-sub-two{
+        width: 100%;
+        margin: 8px;
+        margin-top: 22px;
+    }
+    .form-sub-one .form-fill{
+        width: 450px;
+        height: 25px;
+        margin: 12px auto;
+        padding: 0 20px;
+        font-size: 18px;
+    
+    }
+    .form-sub-one .form-fill2{
+        width: 450px;
+        margin: 10px auto;
+        padding: 0 20px;
+        font-size: 18px;
+        outline: none;
+    }
+    .form-sub-one .button
+    {
+        padding: 8px 14px;
+        margin: 7px;
+    }
+    .form-sub-two h4{
+        font-size: 18px;
+       
+    }
+    
+   }
+
+ 
 
    /* ------------------------------------------------
    media query for making the website responsive  
    -----------------------------------------------*/
-   @media screen and (max-width: 576px) {
+   @media screen and (max-width: 600px) {
 
     .nav-bar{
         padding: 20px 0;
@@ -274,9 +483,7 @@ first-section-description-and-image
     }
     .first-section-description a{
         text-decoration: none;
-        color: white;
-        padding: 10px 18px;
-        background-color: rgb(161, 29, 95);
+        padding: 10px 18px;  
         border-radius: 20px;
     }
     .first-section-image{
@@ -291,9 +498,6 @@ first-section-description-and-image
         
     }
     .second-section{
-        /* width: 90%;
-        margin: 0 auto; */
-        /* margin: 80px 0; */
      display: none;
       
     }
@@ -312,24 +516,12 @@ first-section-description-and-image
       font-weight: 300;
     }
     .third-section-grid{
-        width: 100%;
-        margin: 0 auto;
-        display: grid;
         grid-template-columns: repeat(1,1fr);
-        justify-content: center;
-        align-items: center;
         grid-gap: 20px;
     }
     .third-section-data{
         width: 280px;
         margin: 0 auto;
-        border: 2px solid rgb(212, 206, 206);
-        border-radius: 4px;
-        box-shadow:  0 5px 10px 0 rgba(0,0,0,0.2), 0 7px 12px 0 rgba(0,0,0,0.2);
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        align-items: center;
         
     } 
     .third-section-data .third-section-items img{
@@ -371,42 +563,31 @@ first-section-description-and-image
         margin: 10px;
         margin-bottom: 20px;
     }
-    .fourth-section-pro .form-sub-two{
-        width: 100%;
-        margin: 10px;
-        margin-top: 20px;
-    }
     .form-sub-one .form-fill{
         width: 300px;
         height: 25px;
         margin: 10px auto;
         padding: 0 20px;
-        outline: none;
-        border: none;
-        border-bottom: 3px solid pink;
         font-size: 18px;
-        background-color: rgba(243, 235, 235, 0.726);
+        
     }
     .form-sub-one .form-fill2{
         width: 300px;
         margin: 10px auto;
         padding: 0 20px;
         font-size: 18px;
-        outline: none;
     }
     .form-sub-one .button
     {
-        text-decoration: none;
-        color: white;
         padding: 8px 14px;
-        background-color: rgb(161, 29, 95);
         margin: 7px;
-    }
-    .form-sub-two h4{
-        font-size: 12px;
-       
     }
       .form-sub-two {
             display: none;
         }
    }
+
+
+
+        
+   
