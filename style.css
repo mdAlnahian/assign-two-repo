@@ -106,6 +106,8 @@ first-section-description-and-image
       grid-gap: 50px;
   }
   .third-section-data{
+      width: 350px;
+      margin: 0 auto;
       border: 2px solid rgb(212, 206, 206);
       border-radius: 4px;
       box-shadow:  ;
@@ -118,12 +120,13 @@ first-section-description-and-image
   .third-section-data .third-section-items img{
     /* max-width: 100%; */
     width: 100%;
+    
  } 
  .third-section-details{
      margin-bottom: 20px;
  }
   .third-section-items{
-      margin-top: 40px;
+      margin-top: 20px;
      
   } 
   .third-section-details p, span{
