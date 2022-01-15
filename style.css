@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Condensed&family=Roboto:wght@500&family=Source+Sans+Pro&display=swap');
 
 /* common css */
-body{
+/* body{
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+} */
+.mandatory{
     font-family: 'Roboto', sans-serif;
     width: 80%;
     margin: 0 auto;
@@ -110,7 +115,7 @@ first-section-description-and-image
       margin: 0 auto;
       border: 2px solid rgb(212, 206, 206);
       border-radius: 4px;
-      box-shadow:  ;
+      box-shadow:  0 5px 10px 0 rgba(0,0,0,0.2), 0 7px 12px 0 rgba(0,0,0,0.2);
       display: grid;
       grid-template-columns: auto;
       justify-content: center;
@@ -123,7 +128,7 @@ first-section-description-and-image
     
  } 
  .third-section-details{
-     margin-bottom: 20px;
+     margin-bottom: 0px;
  }
   .third-section-items{
       margin-top: 20px;
@@ -141,3 +146,71 @@ first-section-description-and-image
       color: rgb(204, 175, 175);
       font-size: 0.8em;
   }
+  /* third section style end */
+
+/*-----------------------------
+ fourth section started 
+ -------------------------------*/
+.fourth-section h2{
+    font-size: 42px;
+    text-align: center;
+    margin: 70px 0px;
+}
+.fourth-section-pro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+.fourth-section-pro .form-sub-one{
+    width: 60%;
+    margin: 100px;
+}
+.fourth-section-pro .form-sub-two{
+    width: 40%;
+    margin: 100px;
+}
+.form-sub-one .form-fill{
+    width: 450px;
+    height: 35px;
+    margin: 10px;
+    padding: 0 25px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid pink;
+    font-size: 18px;
+    background-color: rgba(243, 235, 235, 0.726);
+}
+.form-sub-one .form-fill2{
+    width: 450px;
+    margin: 10px;
+    padding: 0 25px;
+    font-size: 18px;
+}
+.form-sub-one .button
+{
+    text-decoration: none;
+    color: white;
+    padding: 14px 24px;
+    background-color: rgb(161, 29, 95);
+    margin: 10px;
+}
+
+
+
+
+  /*--------------------------
+   footer section style
+   ------------------------- */
+
+   .footer-one{
+       background-color: rgb(36, 28, 59);
+       width: 100%;
+       text-align: center;
+       color: #fff;
+       padding: 20px 0px;
+       margin-top: 50px;
+   }
+   .icon{
+       padding: 5px;
+   }
