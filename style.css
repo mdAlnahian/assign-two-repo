@@ -50,10 +50,14 @@ first-section-description-and-image
 .first-section-image{
     width: 33%;
     padding-left: 100px;
+    transition: 2s;
 }
-/* .main-section-description p{
-    margin-bottom: 20px;
-} */
+.first-section-image img:hover {
+    /* transform: scale(1.1); */
+    transform: rotateY(180deg);
+    transition: 2s;
+}
+
 .first-section-description a{
     text-decoration: none;
     color: white;
